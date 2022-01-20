@@ -1,0 +1,18 @@
+# This Dockerfile-dev should be run from docker-compose.unified-frontend-dev
+# as source code folder is binded to docker (to hot reload) by docker-compose
+FROM node:16.13.2-slim
+WORKDIR /app
+ADD ./src /app/src
+ADD ./public /app/public
+COPY package*.json ./
+COPY *.html ./
+COPY vite.config.js ./
+#Should not use ADD . ., should add files and folder explicit
+#ADD . .
+# test not use docker buildkit (DOCKER_BUILDKIT=0), to print out to the screen
+#RUN echo test
+#RUN ls
+# Fix esbuild to run inside docker env
+RUN npm rebuild esbuild
+RUN npm install
+CMD ["npm", "run", "dev"]

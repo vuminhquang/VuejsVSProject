@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  amdax-fnbe-unified-frontend:
+    image: ${DOCKER_REGISTRY:-amdax-fnbe}/unified-frontend:${TAG:-latest}
+    build:
+      context: ./Apps/UnifiedFrontend/
+      dockerfile: Dockerfile-dev
+    restart: on-failure
+    networks:
+      - amdax-fnbe
+    ports:
+      - "8081:3000"
+    volumes:
+      - ./Apps/UnifiedFrontend:/app/ #Attention to the end slash
+      - nodemodules:/app/node_modules
+#    environment:
+#      MONGO_URL: mongodb
+#      PORT: 4000
+
+volumes:
+  nodemodules: {}
+  
+networks:
+  amdax-fnbe: {}

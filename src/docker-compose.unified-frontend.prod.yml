@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  amdax-fnbe-unified-frontend:
+    image: ${DOCKER_REGISTRY:-amdax-fnbe}/unified-frontend:${TAG:-latest}
+    build:
+      context: ./Apps/UnifiedFrontend/
+      dockerfile: Dockerfile-prod
+    restart: on-failure
+    networks:
+      - amdax-fnbe
+    ports:
+      - "8081:80"
