@@ -8,3 +8,5 @@ Howto create it?
   - Move everything in the just create folder <project-name> into our js Vuejs Project folder
   - Configuring vite.config.js for host, port and watch
 - Create Dockerfile and docker-compose
+
+Attention: do not run directly, run through docker-compose instead
