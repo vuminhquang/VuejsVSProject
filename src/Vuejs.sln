@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{792F7E1D-A
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "UnifiedFrontend", "Apps\UnifiedFrontend\UnifiedFrontend.njsproj", "{56F48954-F7DF-4612-944E-E49EBE95FFFA}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,14 +22,17 @@ Global
 		{56F48954-F7DF-4612-944E-E49EBE95FFFA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56F48954-F7DF-4612-944E-E49EBE95FFFA}.Stage|Any CPU.ActiveCfg = Debug|Any CPU
 		{56F48954-F7DF-4612-944E-E49EBE95FFFA}.Stage|Any CPU.Build.0 = Debug|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Stage|Any CPU.ActiveCfg = Release|Any CPU
+		{438F0834-9DEE-4B6B-BDFB-CAA99447D50C}.Stage|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{DFBE731E-4886-4049-A5F0-5A9299950B93} = {792F7E1D-AE41-4D74-9EE5-A40A7C209665}
-		{792F7E1D-AE41-4D74-9EE5-A40A7C209665} = {8E809B67-0B65-4C90-8674-856EBE8D3BE8}
-		{9AF9B88C-5B68-44CD-8E52-5B82B18725E8} = {792F7E1D-AE41-4D74-9EE5-A40A7C209665}
 		{56F48954-F7DF-4612-944E-E49EBE95FFFA} = {792F7E1D-AE41-4D74-9EE5-A40A7C209665}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
